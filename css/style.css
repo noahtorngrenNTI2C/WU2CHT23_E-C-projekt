@@ -33,7 +33,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 50px 300px;
+    grid-template-rows: 100px 100px 300px;
     grid-template-areas: 
     "hea"
     "nav"
@@ -45,6 +45,11 @@
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
+    align-items: center;
+    margin-top: 30px; /* Sänk ner elementet med 10 pixlar från toppen */
+    margin-right: 5px; /* Sänk ner elementet med 5 pixlar från höger kant */
+    margin-bottom: 15px; /* Sänk ner elementet med 15 pixlar från botten */
+    margin-left: 20px; /* Sänk ner elementet med 20 pixlar från vänster kant */
 }
 
 nav{
@@ -61,4 +66,48 @@ section{
 header{
     background-color: rgb(157, 105, 27);
     grid-area: "hea";
+}
+
+a{
+    display: inline-block;
+    height: 30px;
+    width: auto;
+}
+
+#section_wrapper1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px;
+    grid-template-areas: 
+    "no no no"
+    "yes1 yes2 yes3"
+    ;
+    
+
+}
+
+#section1{
+    background: red;
+    margin: 5px;
+    border-radius: 20px;
+    grid-area: "yes1";
+    
+}
+
+#section2{
+    background: darkslateblue;
+    margin: 5px;
+    border-radius: 20px;
+    grid-area: "yes2";
+}
+
+#section3{
+    background: springgreen;
+    margin: 5px;
+    border-radius: 20px;
+    grid-area: "yes3";
+}
+
+#section_empty{
+    grid-area: "no";
 }
