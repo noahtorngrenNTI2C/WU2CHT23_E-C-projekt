@@ -8,14 +8,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
     grid-template-areas: 
     "hea"
     "nav"
     "sec";
-    
-
-
 }
 
 #grid_wrapper2{
@@ -46,10 +43,10 @@
     width: 100%;
     list-style: none;
     align-items: center;
-    margin-top: 30px; /* Sänk ner elementet med 10 pixlar från toppen */
-    margin-right: 5px; /* Sänk ner elementet med 5 pixlar från höger kant */
-    margin-bottom: 15px; /* Sänk ner elementet med 15 pixlar från botten */
-    margin-left: 20px; /* Sänk ner elementet med 20 pixlar från vänster kant */
+    margin-top: 10px; /* Sänk ner elementet med 10 pixlar från toppen */
+    /*margin-right: 5px; /* Sänk ner elementet med 5 pixlar från höger kant */
+    /*margin-bottom: 15px; /* Sänk ner elementet med 15 pixlar från botten */
+    /*margin-left: 20px; /* Sänk ner elementet med 20 pixlar från vänster kant */
 }
 
 nav{
@@ -64,8 +61,14 @@ section{
 }
 
 header{
+    background-image: url(../img/Top_img.jpg);
     background-color: rgb(157, 105, 27);
     grid-area: "hea";
+    overflow: hidden;
+    background-attachment: fixed;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
 }
 
 a{
@@ -90,7 +93,7 @@ a{
     background: red;
     margin: 5px;
     border-radius: 20px;
-    grid-area: "yes1";
+    grid-area: yes1;
     
 }
 
@@ -98,16 +101,32 @@ a{
     background: darkslateblue;
     margin: 5px;
     border-radius: 20px;
-    grid-area: "yes2";
+    grid-area: yes2;
 }
 
 #section3{
     background: springgreen;
     margin: 5px;
     border-radius: 20px;
-    grid-area: "yes3";
+    grid-area: yes3;
 }
 
 #section_empty{
-    grid-area: "no";
+    grid-area: no;
+}
+
+#li_1{
+    margin-right: 150px;
+}
+
+#li_2{
+    margin-right: 160px;
+}
+
+#li3{
+
+}
+
+h1{
+    
 }
