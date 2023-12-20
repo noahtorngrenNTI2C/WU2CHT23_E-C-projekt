@@ -8,22 +8,23 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px 300px minmax(50px, 1fr);
     grid-template-areas: 
     "hea"
     "nav"
-    "sec";
+    "fot";
 }
 
 #grid_wrapper2{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 300px 300px;
+    grid-template-rows: 300px 75px 600px minmax(50px,1fr);
     grid-template-areas: 
     "hea"
     "nav"
-    "sec";
+    "sec"
+    "fot";
 }
 
 #grid_wrapper3{
@@ -50,13 +51,13 @@
 }
 
 nav{
-    background: aqua;
+    background: rgb(192, 57, 43);
     grid-area: nav;
 
 }
 
 section{
-    background: darkgreen;
+    background: rgb(192, 57, 43);
     grid-area: sec;
 }
 
@@ -77,6 +78,15 @@ a{
     height: 30px;
     width: auto;
     text-decoration: none;
+    color: black;
+}
+
+footer{
+    display: flex;
+    background: rgb(169, 50, 38);
+    align-items: center;
+    justify-content: center;
+    grid-area: fot;
 }
 
 #section_wrapper1{
@@ -91,30 +101,32 @@ a{
 
 }
 
-#section1{
-    background: red;
+.link_list_item{
     margin: 5px;
     border-radius: 20px;
+    background-size: cover; /* Scale the background image to fit within the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+#section1{
     grid-area: yes1;
-    
+    background-image: url(../img/Flower_painting.jpg);
 }
 
 #section2{
-    background: darkslateblue;
-    margin: 5px;
-    border-radius: 20px;
     grid-area: yes2;
+    background-image: url(../img/StonesForWebsite.jpg);
 }
 
 #section3{
-    background: springgreen;
-    margin: 5px;
-    border-radius: 20px;
     grid-area: yes3;
+    background-image: url(../img/StarsForWebsite.jpg);
 }
 
 #section_empty{
     grid-area: no;
+    background: rgb(169, 50, 38);
 }
 
 #li_1{
@@ -128,4 +140,20 @@ a{
 .link_list_item{
     text-decoration: none;
     font-weight: bold;
+}
+
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+text-decoration: underline;
+}
+
+#footer_note{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link_list_background{
+    background: rgb(169, 50, 38);
 }
