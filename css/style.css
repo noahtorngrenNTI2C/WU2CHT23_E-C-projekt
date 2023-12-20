@@ -31,15 +31,17 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 300px 75px 600px minmax(50px,1fr);
     grid-template-areas: 
     "hea"
-    "nav";
+    "nav"
+    "sec"
+    "fot";
 }
 
 .link_list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     list-style: none;
     align-items: center;
@@ -130,11 +132,11 @@ footer{
 }
 
 #li_1{
-    margin-right: 150px;
+    margin-right: 200px;
 }
 
 #li_2{
-    margin-right: 160px;
+    margin-right: 100px;
 }
 
 .link_list_item{
@@ -157,3 +159,78 @@ text-decoration: underline;
 .link_list_background{
     background: rgb(169, 50, 38);
 }
+
+#product_section{
+    display: grid;
+
+}
+
+#logo_img{
+    height: 40px;
+    width: auto;
+}
+
+#product_section_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pr1 pr2 pr3"
+    "pr4 pr5 pr6"
+    "pr7 pr8 pr9";
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.product_section{
+    margin: 15px;
+    border-radius: 30px;
+}
+
+#product1{
+    background: yellow;
+    grid-area: pr1;
+}
+
+#product2{
+    background: rgb(135, 222, 135);
+    grid-area: pr2;
+}
+
+#product3{
+    background: rgb(170, 135, 222);
+    grid-area: pr3;
+}
+
+#product4{
+    background: rgb(222, 135, 147);
+    grid-area: pr4;
+}
+
+#product5{
+    background: rgb(135, 212, 222);
+    grid-area: pr5;
+}
+
+#product6{
+    background: rgb(203, 222, 135);
+    grid-area: pr6;
+}
+
+#product7{
+    background: rgb(135, 222, 203);
+    grid-area: pr7;
+}
+
+#product8{
+    background: rgb(215, 135, 222);
+    grid-area: pr8;
+}
+
+#product9{
+    background: rgb(135, 164, 222);
+    grid-area: pr9;
+}
+
