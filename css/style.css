@@ -19,10 +19,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 75px 600px minmax(50px,1fr);
+    grid-template-rows: 300px 75px 100px 1000px minmax(50px,1fr);
     grid-template-areas: 
     "hea"
     "nav"
+    "art"
     "sec"
     "fot";
 }
@@ -160,10 +161,6 @@ text-decoration: underline;
     background: rgb(169, 50, 38);
 }
 
-#product_section{
-    display: grid;
-
-}
 
 #logo_img{
     height: 40px;
@@ -187,50 +184,62 @@ text-decoration: underline;
 .product_section{
     margin: 15px;
     border-radius: 30px;
+    background-size: cover; /* Scale the background image to fit within the section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
 #product1{
-    background: yellow;
+    background-image: url(../img/Bucket_tecknad.jpg);
     grid-area: pr1;
 }
 
 #product2{
-    background: rgb(135, 222, 135);
+    background-image: url(../img/mona-lisa.jpg);
     grid-area: pr2;
 }
 
 #product3{
-    background: rgb(170, 135, 222);
+    background-image: url(../img/night_sky.jpg);
     grid-area: pr3;
 }
 
 #product4{
-    background: rgb(222, 135, 147);
+    background-image: url(../img/olje_tavla.jpg);
     grid-area: pr4;
 }
 
 #product5{
-    background: rgb(135, 212, 222);
+    background-image: url(../img/Slott_litet.jpg);
     grid-area: pr5;
 }
 
 #product6{
-    background: rgb(203, 222, 135);
+    background-image: url(../img/Slott_teckant.jpg);
     grid-area: pr6;
 }
 
 #product7{
-    background: rgb(135, 222, 203);
+    background-image: url(../img/wave_painting.jpg);
     grid-area: pr7;
 }
 
 #product8{
-    background: rgb(215, 135, 222);
+    background-image: url(../img/Tavla_fran_kina.jpg);
     grid-area: pr8;
 }
 
 #product9{
-    background: rgb(135, 164, 222);
+    background-image: url(../img/vatten_tavla.jpg);
     grid-area: pr9;
+}
+
+#product_info{
+    
+    background: blue;
+}
+
+.prduct_info_text{
+    margin: 15px;
 }
 
